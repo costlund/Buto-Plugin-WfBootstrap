@@ -1,0 +1,31 @@
+
+li:
+  type: li
+  attribute:
+    data-target: '#_id_'
+    data-slide-to: '0'
+    class: active
+
+
+div:
+  type: div
+  attribute:
+    class: 'item active'
+  innerHTML:
+    img:
+      type: img
+      attribute:
+        src: '/plugin/twitter/bootstrap335v/carousel/jetty-768581_1920.jpg'
+        alt: Chania1
+        style: 'width:100%;'
+    div:
+      type: div
+      attribute: 
+        class: 'carousel-caption'
+      innerHTML:
+        h3: 
+          type: h3
+          innerHTML: Img H3 P item
+        p:
+          type: p
+          innerHTML: 'Text img h3 p item.'

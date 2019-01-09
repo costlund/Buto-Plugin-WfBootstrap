@@ -1,0 +1,18 @@
+id: my_first_bootstrap_carousel_img_h3_p
+content:
+  1001:
+    img: '/plugin/twitter/bootstrap335v/carousel/jetty-768581_1920.jpg'
+    lable: Item 1
+    text: 'It´s not my solution - it´s yours.'
+  1002:
+    img: '/plugin/twitter/bootstrap335v/carousel/jetty-768581_1920.jpg'
+    lable: Item 2
+    text: 'It´s a start not the end.'
+  1003:
+    img: '/plugin/twitter/bootstrap335v/carousel/jetty-768581_1920.jpg'
+    lable: Item 3
+    text: 'Keep it simple. Very.'
+  1004:
+    img: '/plugin/twitter/bootstrap335v/carousel/jetty-768581_1920.jpg'
+    lable: Item 4
+    text: 'Fast is not always good.'

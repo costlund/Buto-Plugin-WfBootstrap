@@ -1,0 +1,70 @@
+id: my_first_bootstrap_carousel
+content:
+  -
+    -
+      type: img
+      attribute:
+        src: '/theme/wf/hellocompany/carousel/tie-690084_1280.jpg'
+        alt: Chania1
+    -
+      type: div
+      attribute: 
+        class: 'carousel-caption'
+      innerHTML:
+        - 
+          type: h3
+          innerHTML: Solution
+        -
+          type: p
+          innerHTML: 'It´s not my solution - it´s yours.'
+  -
+    -
+      type: img
+      attribute:
+        src: '/theme/wf/hellocompany/carousel/businessman-840623_1920.jpg'
+        alt: Chania2
+    -
+      type: div
+      attribute: 
+        class: 'carousel-caption'
+      innerHTML:
+        - 
+          type: h3
+          innerHTML: Web
+        -
+          type: p
+          innerHTML: 'It´s a start not the end.'
+  -
+    -
+      type: img
+      attribute:
+        src: '/theme/wf/hellocompany/carousel/office-336368_1920.jpg'
+        alt: Flower1
+    -
+      type: div
+      attribute: 
+        class: 'carousel-caption'
+      innerHTML:
+        - 
+          type: h3
+          innerHTML: Information
+        -
+          type: p
+          innerHTML: 'Keep it simple. Very.'
+  -
+    -
+      type: img
+      attribute:
+        src: '/theme/wf/hellocompany/carousel/security-265130_1920.jpg'
+        alt: Flower2
+    -
+      type: div
+      attribute: 
+        class: 'carousel-caption'
+      innerHTML:
+        - 
+          type: h3
+          innerHTML: Security
+        -
+          type: p
+          innerHTML: 'Fast is not always good.'

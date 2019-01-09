@@ -1,0 +1,149 @@
+style:
+  type: style
+  settings:
+    disabled: false
+  innerHTML: '#_id_ .carousel-control{ opacity: 1; width: 0%; }'
+carousel:
+  type: div
+  attribute:
+    id: _id_
+    class: 'carousel slide'
+    data-ride: carousel
+  innerHTML:
+    ol:
+      type: ol
+      attribute:
+        class: 'carousel-indicators'
+      innerHTML:
+        -
+          type: li
+          attribute:
+            data-target: '#_id_'
+            data-slide-to: '0'
+            class: active
+        -
+          type: li
+          attribute:
+            data-target: '#_id_'
+            data-slide-to: '1'
+          innerHTML: ''
+        -
+          type: li
+          attribute:
+            data-target: '#_id_'
+            data-slide-to: '2'
+          innerHTML: ''
+        -
+          type: li
+          attribute:
+            data-target: '#_id_'
+            data-slide-to: '3'
+          innerHTML: ''
+    div:
+      type: div
+      attribute:
+        class: 'carousel-inner'
+        role: listbox
+      innerHTML:
+        -
+          type: div
+          attribute:
+            class: 'item active'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/jetty-768581_1920.jpg'
+                alt: Chania1
+            -
+              type: div
+              attribute: 
+                class: 'carousel-caption'
+              innerHTML:
+                - 
+                  type: h3
+                  innerHTML: Flowers
+                -
+                  type: p
+                  innerHTML: 'Beatiful flowers in Kolymbari, Crete.'
+        -
+          type: div
+          attribute:
+            class: 'item'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/jetty-598198_1920.jpg'
+                alt: Chania2
+        -
+          type: div
+          attribute:
+            class: 'item'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/ammersee-490462_1920.jpg'
+                alt: Flower1
+            -
+              type: div
+              attribute: 
+                class: 'carousel-caption'
+              innerHTML:
+                - 
+                  type: h3
+                  innerHTML: Other height
+                -
+                  type: p
+                  innerHTML: '1 920px × 1 200px'
+        -
+          type: div
+          attribute:
+            class: 'item'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/ammersee-882067_1920.jpg'
+                alt: Flower2
+    a_left:
+      type: a
+      attribute:
+        class: 'left carousel-control'
+        href: '#_id_'
+        role: button
+        data-slide: prev
+      innerHTML:
+        -
+          type: span
+          attribute:
+            class: 'glyphicon glyphicon-chevron-left'
+            aria-hidden: 'true'
+          innerHTML: ''
+        -
+          type: span
+          attribute:
+            class: 'sr-only'
+          innerHTML: Previous
+    a_right:
+      type: a
+      attribute:
+        class: 'right carousel-control'
+        href: '#_id_'
+        role: button
+        data-slide: next
+      innerHTML:
+        -
+          type: span
+          attribute:
+            class: 'glyphicon glyphicon-chevron-right'
+            aria-hidden: 'true'
+          innerHTML: ''
+        -
+          type: span
+          attribute:
+            class: 'sr-only'
+          innerHTML: Next
+            
+      

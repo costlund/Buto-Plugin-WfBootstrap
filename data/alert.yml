@@ -1,0 +1,6 @@
+type: div
+attribute:
+  class: 'alert alert-success'
+  role: alert
+innerHTML:
+    

@@ -1,0 +1,108 @@
+brand:
+  lable: 'Webforms'
+  href: '/'
+navbar:
+  -
+    item:
+      -
+        sortorder: 1
+        lable: Contact
+        href: /contact
+      -
+        sortorder: 1
+        lable: About
+        href: /about
+  -
+    class: 'navbar-right'
+    item:
+      -
+        lable: Facebook
+        item:
+          -
+            lable: Sign in
+            href: /facebook/signin
+            settings:
+              role:
+                item:
+                  - unknown
+          -
+            lable: Sign in (auto)
+            href: /facebook/signin?auto=1
+            settings:
+              role:
+                item:
+                  - unknown
+          -
+            lable: Sign out
+            href: /facebook/signout
+            settings:
+              role:
+                item:
+                  - client
+          -
+            lable: Sign out (auto)
+            href: /facebook/signout?auto=1
+            settings:
+              role:
+                item:
+                  - client
+      -
+        lable: Accont
+        href: /auth/form
+        item:
+          -
+            lable: Sign in
+            href: /auth/form
+            settings:
+              role:
+                item:
+                  - unknown
+          -
+            lable: Sign out
+            href: /auth/signout
+            settings:
+              role:
+                item:
+                  - client
+          -
+            lable: My details
+            href: /auth/details
+            settings:
+              role:
+                item:
+                  - client
+          -
+            lable: Register
+            href: /auth/register
+            settings:
+              role:
+                item:
+                  - unknown
+          -
+            lable: Forgott password
+            href: /auth/password
+            settings:
+              role:
+                item:
+                  - unknown
+          -
+            lable: Editor
+            href: /editor/desktop
+            settings:
+              role:
+                item:
+                  - webmaster
+  -
+    class: 'navbar-right'
+    element:
+      type: p
+      attribute:
+        class: 'navbar-text'
+      innerHTML: 'globals:_SESSION/username'
+rewrite:
+  'menu/innerHTML/nav/innerHTML/container/innerHTML/header/innerHTML/brand':
+    type: a
+    attribute:
+      class: navbar-brand
+      href: #
+    innerHTML: 'Rewrite brand...'

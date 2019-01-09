@@ -1,0 +1,21 @@
+jumbotron:
+  type: div
+  attribute:
+    class: jumbotron
+  innerHTML:
+    h1:
+      type: h1
+      innerHTML: 'Hello, world!'
+    p1:
+      type: p
+      innerHTML: '...'
+    p2:
+      type: p
+      innerHTML:
+        a:
+          type: a
+          attribute:
+            class: 'btn btn-primary btn-lg'
+            href: #
+            role: button
+          innerHTML: 'Learn more'

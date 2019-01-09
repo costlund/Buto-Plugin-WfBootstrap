@@ -1,0 +1,156 @@
+style:
+  type: style
+  innerHTML: |   
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+      height: 400px;
+    }
+    .carousel-control{
+      background: black;
+      opacity: 1;
+      width: 0%;
+    }
+    .carousel-inner{
+      background: black;
+    }
+    .carousel{
+      border-radius: 4px;
+    }
+
+div:
+  type: div
+  attribute:
+    id: myCarousel
+    class: 'carousel slide'
+    data-ride: carousel
+  innerHTML:
+    ol:
+      type: ol
+      attribute:
+        class: 'carousel-indicators'
+      innerHTML:
+      innerHTMLzzz:
+        -
+          type: li
+          attribute:
+            data-target: '#myCarousel'
+            data-slide-to: '0'
+            class: active
+        -
+          type: li
+          attribute:
+            data-target: '#myCarousel'
+            data-slide-to: '1'
+          innerHTML: ''
+        -
+          type: li
+          attribute:
+            data-target: '#myCarousel'
+            data-slide-to: '2'
+          innerHTML: ''
+        -
+          type: li
+          attribute:
+            data-target: '#myCarousel'
+            data-slide-to: '3'
+          innerHTML: ''
+    div:
+      type: div
+      attribute:
+        class: 'carousel-inner'
+        role: listbox
+      innerHTML:
+      innerHTMLzzz:
+        -
+          type: div
+          attribute:
+            class: 'item active'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/jetty-768581_1920.jpg'
+                alt: Chania1
+            -
+              type: div
+              attribute: 
+                class: 'carousel-caption'
+              innerHTML:
+                - 
+                  type: h3
+                  innerHTML: Flowers
+                -
+                  type: p
+                  innerHTML: 'Beatiful flowers in Kolymbari, Crete.'
+        -
+          type: div
+          attribute:
+            class: 'item'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/jetty-598198_1920.jpg'
+                alt: Chania2
+        -
+          type: div
+          attribute:
+            class: 'item'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/ammersee-490462_1920.jpg'
+                alt: Flower1
+        -
+          type: div
+          attribute:
+            class: 'item'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                src: '/plugin/twitter/bootstrap335v/carousel/ammersee-882067_1920.jpg'
+                alt: Flower2
+    a_left:
+      type: a
+      attribute:
+        class: 'left carousel-control'
+        href: '#myCarousel'
+        role: button
+        data-slide: prev
+      innerHTML:
+        -
+          type: span
+          attribute:
+            class: 'glyphicon glyphicon-chevron-left'
+            aria-hidden: 'true'
+          innerHTML: ''
+        -
+          type: span
+          attribute:
+            class: 'sr-only'
+          innerHTML: Previous
+    a_right:
+      type: a
+      attribute:
+        class: 'right carousel-control'
+        href: '#myCarousel'
+        role: button
+        data-slide: next
+      innerHTML:
+        -
+          type: span
+          attribute:
+            class: 'glyphicon glyphicon-chevron-right'
+            aria-hidden: 'true'
+          innerHTML: ''
+        -
+          type: span
+          attribute:
+            class: 'sr-only'
+          innerHTML: Next
+            
+      
