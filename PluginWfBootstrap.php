@@ -491,7 +491,7 @@ class PluginWfBootstrap{
         if(wfArray::get($value, 'img')){
           $temp = wfArray::set($temp, 'innerHTML/img/attribute/src', wfArray::get($value, 'img'));
         }else{
-          $temp = wfArray::set($temp, 'innerHTML/img/attribute/src', str_replace('[key]', $key, wfArray::get($data, 'data/img_dir')));
+          $temp = wfArray::set($temp, 'innerHTML/img/attribute/src', wfPhpfunc::str_replace('[key]', $key, wfArray::get($data, 'data/img_dir')));
         }
         
         
